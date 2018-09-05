@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!PDFsharp", "!PDFsharp", "{603BA43F-715B-471B-897B-871FD0EC35A8}"
 EndProject
@@ -33,6 +33,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.RtfRendering-wpf", "MigraDoc.RtfRendering-wpf\MigraDoc.RtfRendering-wpf.csproj", "{00416AAB-3EEE-44A2-923B-86782560CE00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.RtfRendering-gdi", "MigraDoc.RtfRendering-gdi\MigraDoc.RtfRendering-gdi.csproj", "{22010032-52DC-464D-B8BB-6CD9BF230D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp-gdi-netstandard2", "..\..\PDFsharp\src\PdfSharp-gdi-netstandard2\PdfSharp-gdi-netstandard2.csproj", "{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp.Charting-gdi-netstandard2", "..\..\PDFsharp\src\PdfSharp.Charting-gdi-netstandard2\PdfSharp.Charting-gdi-netstandard2.csproj", "{84688360-AA96-4370-A53E-7E3145EC58C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -258,6 +262,46 @@ Global
 		{22010032-52DC-464D-B8BB-6CD9BF230D1F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{22010032-52DC-464D-B8BB-6CD9BF230D1F}.Release|Win32.ActiveCfg = Release|Any CPU
 		{22010032-52DC-464D-B8BB-6CD9BF230D1F}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|Win32.Build.0 = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|ARM.Build.0 = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Win32.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|Win32.Build.0 = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80}.Release|x86.Build.0 = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|ARM.Build.0 = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|Win32.Build.0 = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|ARM.ActiveCfg = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|ARM.Build.0 = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Win32.ActiveCfg = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|Win32.Build.0 = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{84688360-AA96-4370-A53E-7E3145EC58C6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -269,5 +313,10 @@ Global
 		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B} = {603BA43F-715B-471B-897B-871FD0EC35A8}
 		{6F98A822-41B0-4C7A-85A6-E95C1D3E88EF} = {603BA43F-715B-471B-897B-871FD0EC35A8}
 		{CFDB7D46-EA8D-47DE-B10A-9E755A1B48BA} = {603BA43F-715B-471B-897B-871FD0EC35A8}
+		{A4BEBF80-ADC7-46CB-ACE1-A5E627186C80} = {603BA43F-715B-471B-897B-871FD0EC35A8}
+		{84688360-AA96-4370-A53E-7E3145EC58C6} = {603BA43F-715B-471B-897B-871FD0EC35A8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3960F159-52F4-4D5D-B6B3-593721E97A50}
 	EndGlobalSection
 EndGlobal

@@ -35,6 +35,7 @@ namespace MigraDoc.DocumentObjectModel
         public const string Title = "MigraDoc.DocumentObjectModel.dll";
         public const string Description = "";
         public const string Version = ProductVersionInfo.Version;
+        public const string Creator = ProductVersionInfo.Creator;
         public const string Company = ProductVersionInfo.Company;
         public const string Product = ProductVersionInfo.Product;
         public const string Copyright = ProductVersionInfo.Copyright;

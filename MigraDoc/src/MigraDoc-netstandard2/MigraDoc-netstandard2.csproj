@@ -1,0 +1,793 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MigraDoc_netstandard2</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;GDI;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;GDI;RELEASE;NETSTANDARD;NETSTANDARD2_0;RELEASE;NETSTANDARD;NETSTANDARD2_0;RELEASE;NETSTANDARD;NETSTANDARD2_0;RELEASE;NETSTANDARD;NETSTANDARD2_0;RELEASE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\AreaChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\AreaChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\AreaPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\AreaPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\AxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\AxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\AxisTitleRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\AxisTitleRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarClusteredLegendRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarClusteredLegendRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarClusteredPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarClusteredPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarDataLabelRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarDataLabelRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarGridlinesRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarGridlinesRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\BarStackedPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\BarStackedPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\Colors.cs" Link="PdfSharp.Charting\Charting.Renderers\Colors.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnClusteredPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnClusteredPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnDataLabelRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnDataLabelRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnLikeChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnLikeChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnLikeGridlinesRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnLikeGridlinesRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnLikeLegendRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnLikeLegendRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnLikePlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnLikePlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\ColumnStackedPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\ColumnStackedPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\CombinationChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\CombinationChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\Converter.cs" Link="PdfSharp.Charting\Charting.Renderers\Converter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\DataLabelRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\DataLabelRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\GridlinesRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\GridlinesRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\HorizontalStackedYAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\HorizontalStackedYAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\HorizontalXAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\HorizontalXAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\HorizontalYAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\HorizontalYAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\LegendEntryRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\LegendEntryRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\LegendRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\LegendRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\LineChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\LineChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\LineFormatRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\LineFormatRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\LinePlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\LinePlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\MarkerRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\MarkerRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PieChartRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PieChartRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PieClosedPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PieClosedPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PieDataLabelRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PieDataLabelRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PieExplodedPlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PieExplodedPlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PieLegendRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PieLegendRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PiePlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PiePlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PlotAreaBorderRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PlotAreaBorderRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\PlotAreaRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\PlotAreaRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\Renderer.cs" Link="PdfSharp.Charting\Charting.Renderers\Renderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\RendererInfo.cs" Link="PdfSharp.Charting\Charting.Renderers\RendererInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\RendererParameters.cs" Link="PdfSharp.Charting\Charting.Renderers\RendererParameters.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\VerticalStackedYAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\VerticalStackedYAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\VerticalXAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\VerticalXAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\VerticalYAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\VerticalYAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\WallRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\WallRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\XAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\XAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting.Renderers\YAxisRenderer.cs" Link="PdfSharp.Charting\Charting.Renderers\YAxisRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Axis.cs" Link="PdfSharp.Charting\Charting\Axis.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\AxisTitle.cs" Link="PdfSharp.Charting\Charting\AxisTitle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Chart.cs" Link="PdfSharp.Charting\Charting\Chart.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\ChartFrame.cs" Link="PdfSharp.Charting\Charting\ChartFrame.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\ChartObject.cs" Link="PdfSharp.Charting\Charting\ChartObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\DataLabel.cs" Link="PdfSharp.Charting\Charting\DataLabel.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\DocumentObject.cs" Link="PdfSharp.Charting\Charting\DocumentObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\DocumentObjectCollection.cs" Link="PdfSharp.Charting\Charting\DocumentObjectCollection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\BlankType.cs" Link="PdfSharp.Charting\Charting\enums\BlankType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\ChartType.cs" Link="PdfSharp.Charting\Charting\enums\ChartType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\DataLabelPosition.cs" Link="PdfSharp.Charting\Charting\enums\DataLabelPosition.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\DataLabelType.cs" Link="PdfSharp.Charting\Charting\enums\DataLabelType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\DockingType.cs" Link="PdfSharp.Charting\Charting\enums\DockingType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\FontProperties.cs" Link="PdfSharp.Charting\Charting\enums\FontProperties.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\HorizontalAlignment.cs" Link="PdfSharp.Charting\Charting\enums\HorizontalAlignment.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\LineStyle.cs" Link="PdfSharp.Charting\Charting\enums\LineStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\MarkerStyle.cs" Link="PdfSharp.Charting\Charting\enums\MarkerStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\TickMarkType.cs" Link="PdfSharp.Charting\Charting\enums\TickMarkType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\Underline.cs" Link="PdfSharp.Charting\Charting\enums\Underline.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\enums\VerticalAlignment.cs" Link="PdfSharp.Charting\Charting\enums\VerticalAlignment.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\FillFormat.cs" Link="PdfSharp.Charting\Charting\FillFormat.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Font.cs" Link="PdfSharp.Charting\Charting\Font.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Gridlines.cs" Link="PdfSharp.Charting\Charting\Gridlines.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Legend.cs" Link="PdfSharp.Charting\Charting\Legend.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\LineFormat.cs" Link="PdfSharp.Charting\Charting\LineFormat.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\PlotArea.cs" Link="PdfSharp.Charting\Charting\PlotArea.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Point.cs" Link="PdfSharp.Charting\Charting\Point.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\PSCSR.cs" Link="PdfSharp.Charting\Charting\PSCSR.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\Series.cs" Link="PdfSharp.Charting\Charting\Series.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\SeriesCollection.cs" Link="PdfSharp.Charting\Charting\SeriesCollection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\SeriesElements.cs" Link="PdfSharp.Charting\Charting\SeriesElements.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\TickLabels.cs" Link="PdfSharp.Charting\Charting\TickLabels.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\XSeries.cs" Link="PdfSharp.Charting\Charting\XSeries.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\XSeriesElements.cs" Link="PdfSharp.Charting\Charting\XSeriesElements.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\XValue.cs" Link="PdfSharp.Charting\Charting\XValue.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Charting\XValues.cs" Link="PdfSharp.Charting\Charting\XValues.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\!internal\Configuration.cs" Link="PdfSharp\!internal\Configuration.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\!internal\Directives.cs" Link="PdfSharp\!internal\Directives.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\!internal\TargetContext.cs" Link="PdfSharp\!internal\TargetContext.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\!JetBrains\Annotations.cs" Link="PdfSharp\!JetBrains\Annotations.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\BarCode.cs" Link="PdfSharp\Drawing.BarCodes\BarCode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\BarCodeRenderInfo.cs" Link="PdfSharp\Drawing.BarCodes\BarCodeRenderInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\BcgSR.cs" Link="PdfSharp\Drawing.BarCodes\BcgSR.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\Code2of5Interleaved.cs" Link="PdfSharp\Drawing.BarCodes\Code2of5Interleaved.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\Code3of9Standard.cs" Link="PdfSharp\Drawing.BarCodes\Code3of9Standard.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\CodeBase.cs" Link="PdfSharp\Drawing.BarCodes\CodeBase.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\CodeDataMatrix.cs" Link="PdfSharp\Drawing.BarCodes\CodeDataMatrix.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\CodeOmr.cs" Link="PdfSharp\Drawing.BarCodes\CodeOmr.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\DataMatrixImage.cs" Link="PdfSharp\Drawing.BarCodes\DataMatrixImage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\AnchorType.cs" Link="PdfSharp\Drawing.BarCodes\enums\AnchorType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\CodeDirection.cs" Link="PdfSharp\Drawing.BarCodes\enums\CodeDirection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\CodeType.cs" Link="PdfSharp\Drawing.BarCodes\enums\CodeType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\DataMatrixEncoding.cs" Link="PdfSharp\Drawing.BarCodes\enums\DataMatrixEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\MarkDistance.cs" Link="PdfSharp\Drawing.BarCodes\enums\MarkDistance.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\enums\TextLocation.cs" Link="PdfSharp\Drawing.BarCodes\enums\TextLocation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\MatrixCode.cs" Link="PdfSharp\Drawing.BarCodes\MatrixCode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\OmrData.cs" Link="PdfSharp\Drawing.BarCodes\OmrData.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.BarCodes\ThickThinBarcodeRenderer.cs" Link="PdfSharp\Drawing.BarCodes\ThickThinBarcodeRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Internal\IImageImporter.cs" Link="PdfSharp\Drawing.Internal\IImageImporter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Internal\ImageImporter.cs" Link="PdfSharp\Drawing.Internal\ImageImporter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Internal\ImageImporterBmp.cs" Link="PdfSharp\Drawing.Internal\ImageImporterBmp.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Internal\ImageImporterJpeg.cs" Link="PdfSharp\Drawing.Internal\ImageImporterJpeg.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Internal\ImageImporterRoot.cs" Link="PdfSharp\Drawing.Internal\ImageImporterRoot.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Layout\enums\XParagraphAlignment.cs" Link="PdfSharp\Drawing.Layout\enums\XParagraphAlignment.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Layout\XTextFormatter.cs" Link="PdfSharp\Drawing.Layout\XTextFormatter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Pdf\enums\DirtyFlags.cs" Link="PdfSharp\Drawing.Pdf\enums\DirtyFlags.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Pdf\enums\StreamMode.cs" Link="PdfSharp\Drawing.Pdf\enums\StreamMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Pdf\PdfGraphicsState.cs" Link="PdfSharp\Drawing.Pdf\PdfGraphicsState.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing.Pdf\XGraphicsPdfRenderer.cs" Link="PdfSharp\Drawing.Pdf\XGraphicsPdfRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\CoreGraphicsPath.cs" Link="PdfSharp\Drawing\CoreGraphicsPath.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\PathStart.cs" Link="PdfSharp\Drawing\enums\PathStart.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XColorSpace.cs" Link="PdfSharp\Drawing\enums\XColorSpace.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XCombineMode.cs" Link="PdfSharp\Drawing\enums\XCombineMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XDashStyle.cs" Link="PdfSharp\Drawing\enums\XDashStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XFillMode.cs" Link="PdfSharp\Drawing\enums\XFillMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XFontStyle.cs" Link="PdfSharp\Drawing\enums\XFontStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XGdiFontStyle.cs" Link="PdfSharp\Drawing\enums\XGdiFontStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XGraphicRenderTarget.cs" Link="PdfSharp\Drawing\enums\XGraphicRenderTarget.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XGraphicsPathItemType.cs" Link="PdfSharp\Drawing\enums\XGraphicsPathItemType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XGraphicsPdfPageOptions.cs" Link="PdfSharp\Drawing\enums\XGraphicsPdfPageOptions.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XGraphicsUnit.cs" Link="PdfSharp\Drawing\enums\XGraphicsUnit.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XKnownColor.cs" Link="PdfSharp\Drawing\enums\XKnownColor.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XLineAlignment.cs" Link="PdfSharp\Drawing\enums\XLineAlignment.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XLinearGradientMode.cs" Link="PdfSharp\Drawing\enums\XLinearGradientMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XLineCap.cs" Link="PdfSharp\Drawing\enums\XLineCap.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XLineJoin.cs" Link="PdfSharp\Drawing\enums\XLineJoin.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XMatrixOrder.cs" Link="PdfSharp\Drawing\enums\XMatrixOrder.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XPageDirection.cs" Link="PdfSharp\Drawing\enums\XPageDirection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XSmoothingMode.cs" Link="PdfSharp\Drawing\enums\XSmoothingMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XStringAlignment.cs" Link="PdfSharp\Drawing\enums\XStringAlignment.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XStyleSimulations.cs" Link="PdfSharp\Drawing\enums\XStyleSimulations.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\enums\XSweepDirection.cs" Link="PdfSharp\Drawing\enums\XSweepDirection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\FontFamilyCache.cs" Link="PdfSharp\Drawing\FontFamilyCache.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\FontFamilyInternal.cs" Link="PdfSharp\Drawing\FontFamilyInternal.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\FontHelper.cs" Link="PdfSharp\Drawing\FontHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\GeometryHelper.cs" Link="PdfSharp\Drawing\GeometryHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\GraphicsStateStack.cs" Link="PdfSharp\Drawing\GraphicsStateStack.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\ImageHelper.cs" Link="PdfSharp\Drawing\ImageHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\InternalGraphicsState.cs" Link="PdfSharp\Drawing\InternalGraphicsState.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\IXGraphicsRenderer.cs" Link="PdfSharp\Drawing\IXGraphicsRenderer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\PdfFontOptions.cs" Link="PdfSharp\Drawing\PdfFontOptions.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBitmapDecoder.cs" Link="PdfSharp\Drawing\XBitmapDecoder.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBitmapEncoder.cs" Link="PdfSharp\Drawing\XBitmapEncoder.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBitmapImage.cs" Link="PdfSharp\Drawing\XBitmapImage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBitmapSource.cs" Link="PdfSharp\Drawing\XBitmapSource.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBrush.cs" Link="PdfSharp\Drawing\XBrush.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XBrushes.cs" Link="PdfSharp\Drawing\XBrushes.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XColor.cs" Link="PdfSharp\Drawing\XColor.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XColorResourceManager.cs" Link="PdfSharp\Drawing\XColorResourceManager.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XColors.cs" Link="PdfSharp\Drawing\XColors.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XConvert.cs" Link="PdfSharp\Drawing\XConvert.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFont.cs" Link="PdfSharp\Drawing\XFont.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontFamily.cs" Link="PdfSharp\Drawing\XFontFamily.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontMetrics.cs" Link="PdfSharp\Drawing\XFontMetrics.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontSource.cs" Link="PdfSharp\Drawing\XFontSource.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontStretch.cs" Link="PdfSharp\Drawing\XFontStretch.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontWeight.cs" Link="PdfSharp\Drawing\XFontWeight.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XFontWeights.cs" Link="PdfSharp\Drawing\XFontWeights.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XForm.cs" Link="PdfSharp\Drawing\XForm.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGlyphTypeface.cs" Link="PdfSharp\Drawing\XGlyphTypeface.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphics.cs" Link="PdfSharp\Drawing\XGraphics.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphicsContainer.cs" Link="PdfSharp\Drawing\XGraphicsContainer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphicsPath.cs" Link="PdfSharp\Drawing\XGraphicsPath.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphicsPathInternals.cs" Link="PdfSharp\Drawing\XGraphicsPathInternals.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphicsPathItem.cs" Link="PdfSharp\Drawing\XGraphicsPathItem.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XGraphicsState.cs" Link="PdfSharp\Drawing\XGraphicsState.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XImage.cs" Link="PdfSharp\Drawing\XImage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XImageFormat.cs" Link="PdfSharp\Drawing\XImageFormat.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XKnownColorTable.cs" Link="PdfSharp\Drawing\XKnownColorTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XLinearGradientBrush.cs" Link="PdfSharp\Drawing\XLinearGradientBrush.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XMatrix.cs" Link="PdfSharp\Drawing\XMatrix.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XPdfForm.cs" Link="PdfSharp\Drawing\XPdfForm.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XPen.cs" Link="PdfSharp\Drawing\XPen.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XPens.cs" Link="PdfSharp\Drawing\XPens.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XPoint.cs" Link="PdfSharp\Drawing\XPoint.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XPrivateFontCollection.cs" Link="PdfSharp\Drawing\XPrivateFontCollection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XRect.cs" Link="PdfSharp\Drawing\XRect.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XSize.cs" Link="PdfSharp\Drawing\XSize.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XSolidBrush.cs" Link="PdfSharp\Drawing\XSolidBrush.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XStringFormat.cs" Link="PdfSharp\Drawing\XStringFormat.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XStringFormats.cs" Link="PdfSharp\Drawing\XStringFormats.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XTypeface.cs" Link="PdfSharp\Drawing\XTypeface.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XUnit.cs" Link="PdfSharp\Drawing\XUnit.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Drawing\XVector.cs" Link="PdfSharp\Drawing\XVector.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\enums\FontTechnology.cs" Link="PdfSharp\Fonts.OpenType\enums\FontTechnology.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\enums\TableTagNames.cs" Link="PdfSharp\Fonts.OpenType\enums\TableTagNames.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\FontDescriptor.cs" Link="PdfSharp\Fonts.OpenType\FontDescriptor.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\GenericFontTable.cs" Link="PdfSharp\Fonts.OpenType\GenericFontTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\GlyphDataTable.cs" Link="PdfSharp\Fonts.OpenType\GlyphDataTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\GlyphTypefaceCache.cs" Link="PdfSharp\Fonts.OpenType\GlyphTypefaceCache.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\IndexToLocationTable.cs" Link="PdfSharp\Fonts.OpenType\IndexToLocationTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\IRefFontTable.cs" Link="PdfSharp\Fonts.OpenType\IRefFontTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeDescriptor.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeDescriptor.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeFontface.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeFontface.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeFontfaceCache.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeFontfaceCache.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeFontTable.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeFontTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeFontTables.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeFontTables.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\OpenTypeFontWriter.cs" Link="PdfSharp\Fonts.OpenType\OpenTypeFontWriter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts.OpenType\TableDirectoryEntry.cs" Link="PdfSharp\Fonts.OpenType\TableDirectoryEntry.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\AdobeGlyphList20.cs" Link="PdfSharp\Fonts\AdobeGlyphList20.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\AdobeGlyphListForNewFonts.cs" Link="PdfSharp\Fonts\AdobeGlyphListForNewFonts.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\CMapInfo.cs" Link="PdfSharp\Fonts\CMapInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\FontDescriptorCache.cs" Link="PdfSharp\Fonts\FontDescriptorCache.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\FontFactory.cs" Link="PdfSharp\Fonts\FontFactory.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\FontResolverInfo.cs" Link="PdfSharp\Fonts\FontResolverInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\FontResolvingOptions.cs" Link="PdfSharp\Fonts\FontResolvingOptions.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\FontWriter.cs" Link="PdfSharp\Fonts\FontWriter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\GlobalFontSettings.cs" Link="PdfSharp\Fonts\GlobalFontSettings.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\IFontResolver.cs" Link="PdfSharp\Fonts\IFontResolver.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\PlatformFontResolver.cs" Link="PdfSharp\Fonts\PlatformFontResolver.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Fonts\PlatformFontResolverInfo.cs" Link="PdfSharp\Fonts\PlatformFontResolverInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\Calc.cs" Link="PdfSharp\Internal\Calc.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\ColorHelper.cs" Link="PdfSharp\Internal\ColorHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\Diagnostics.cs" Link="PdfSharp\Internal\Diagnostics.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\DiagnosticsHelper.cs" Link="PdfSharp\Internal\DiagnosticsHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\DoubleUtil.cs" Link="PdfSharp\Internal\DoubleUtil.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\Lock.cs" Link="PdfSharp\Internal\Lock.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\NativeMethods.cs" Link="PdfSharp\Internal\NativeMethods.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Internal\TokenizerHelper.cs" Link="PdfSharp\Internal\TokenizerHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\enums\PdfAcroFieldFlags.cs" Link="PdfSharp\Pdf.AcroForms\enums\PdfAcroFieldFlags.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfAcroField.cs" Link="PdfSharp\Pdf.AcroForms\PdfAcroField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfAcroForm.cs" Link="PdfSharp\Pdf.AcroForms\PdfAcroForm.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfButtonField.cs" Link="PdfSharp\Pdf.AcroForms\PdfButtonField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfCheckBoxField.cs" Link="PdfSharp\Pdf.AcroForms\PdfCheckBoxField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfChoiceField.cs" Link="PdfSharp\Pdf.AcroForms\PdfChoiceField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfComboBoxField.cs" Link="PdfSharp\Pdf.AcroForms\PdfComboBoxField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfGenericField.cs" Link="PdfSharp\Pdf.AcroForms\PdfGenericField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfListBoxField.cs" Link="PdfSharp\Pdf.AcroForms\PdfListBoxField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfPushButtonField.cs" Link="PdfSharp\Pdf.AcroForms\PdfPushButtonField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfRadioButtonField.cs" Link="PdfSharp\Pdf.AcroForms\PdfRadioButtonField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfSignatureField.cs" Link="PdfSharp\Pdf.AcroForms\PdfSignatureField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.AcroForms\PdfTextField.cs" Link="PdfSharp\Pdf.AcroForms\PdfTextField.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Actions\enums\PdfNamedActionNames.cs" Link="PdfSharp\Pdf.Actions\enums\PdfNamedActionNames.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Actions\PdfAction.cs" Link="PdfSharp\Pdf.Actions\PdfAction.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Actions\PdfGoToAction.cs" Link="PdfSharp\Pdf.Actions\PdfGoToAction.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\IContentStream.cs" Link="PdfSharp\Pdf.Advanced\IContentStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfCatalog.cs" Link="PdfSharp\Pdf.Advanced\PdfCatalog.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfCIDFont.cs" Link="PdfSharp\Pdf.Advanced\PdfCIDFont.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfContent.cs" Link="PdfSharp\Pdf.Advanced\PdfContent.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfContents.cs" Link="PdfSharp\Pdf.Advanced\PdfContents.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfCrossReferenceStream.cs" Link="PdfSharp\Pdf.Advanced\PdfCrossReferenceStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfCrossReferenceTable.cs" Link="PdfSharp\Pdf.Advanced\PdfCrossReferenceTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfDictionaryWithContentStream.cs" Link="PdfSharp\Pdf.Advanced\PdfDictionaryWithContentStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfExtGState.cs" Link="PdfSharp\Pdf.Advanced\PdfExtGState.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfExtGStateTable.cs" Link="PdfSharp\Pdf.Advanced\PdfExtGStateTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfFont.cs" Link="PdfSharp\Pdf.Advanced\PdfFont.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfFontDescriptor.cs" Link="PdfSharp\Pdf.Advanced\PdfFontDescriptor.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfFontTable.cs" Link="PdfSharp\Pdf.Advanced\PdfFontTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfFormXObject.cs" Link="PdfSharp\Pdf.Advanced\PdfFormXObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfFormXObjectTable.cs" Link="PdfSharp\Pdf.Advanced\PdfFormXObjectTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfGroupAttributes.cs" Link="PdfSharp\Pdf.Advanced\PdfGroupAttributes.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfImage.cs" Link="PdfSharp\Pdf.Advanced\PdfImage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfImage.FaxEncode.cs" Link="PdfSharp\Pdf.Advanced\PdfImage.FaxEncode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfImageTable.cs" Link="PdfSharp\Pdf.Advanced\PdfImageTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfImportedObjectTable.cs" Link="PdfSharp\Pdf.Advanced\PdfImportedObjectTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfInternals.cs" Link="PdfSharp\Pdf.Advanced\PdfInternals.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfObjectInternals.cs" Link="PdfSharp\Pdf.Advanced\PdfObjectInternals.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfObjectStream.cs" Link="PdfSharp\Pdf.Advanced\PdfObjectStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfPageInheritableObjects.cs" Link="PdfSharp\Pdf.Advanced\PdfPageInheritableObjects.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfPageInterals.cs" Link="PdfSharp\Pdf.Advanced\PdfPageInterals.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfReference.cs" Link="PdfSharp\Pdf.Advanced\PdfReference.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfResourceMap.cs" Link="PdfSharp\Pdf.Advanced\PdfResourceMap.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfResources.cs" Link="PdfSharp\Pdf.Advanced\PdfResources.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfResourceTable.cs" Link="PdfSharp\Pdf.Advanced\PdfResourceTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfShading.cs" Link="PdfSharp\Pdf.Advanced\PdfShading.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfShadingPattern.cs" Link="PdfSharp\Pdf.Advanced\PdfShadingPattern.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfSoftMask.cs" Link="PdfSharp\Pdf.Advanced\PdfSoftMask.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfTilingPattern.cs" Link="PdfSharp\Pdf.Advanced\PdfTilingPattern.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfToUnicodeMap.cs" Link="PdfSharp\Pdf.Advanced\PdfToUnicodeMap.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfTrailer.cs" Link="PdfSharp\Pdf.Advanced\PdfTrailer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfTransparencyGroupAttributes.cs" Link="PdfSharp\Pdf.Advanced\PdfTransparencyGroupAttributes.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfTrueTypeFont.cs" Link="PdfSharp\Pdf.Advanced\PdfTrueTypeFont.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfType0Font.cs" Link="PdfSharp\Pdf.Advanced\PdfType0Font.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfType1Font.cs" Link="PdfSharp\Pdf.Advanced\PdfType1Font.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Advanced\PdfXObject.cs" Link="PdfSharp\Pdf.Advanced\PdfXObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\enums\PdfAnnotationFlags.cs" Link="PdfSharp\Pdf.Annotations\enums\PdfAnnotationFlags.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\enums\PdfRubberStampAnnotationIcon.cs" Link="PdfSharp\Pdf.Annotations\enums\PdfRubberStampAnnotationIcon.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\enums\PdfTextAnnotationIcon.cs" Link="PdfSharp\Pdf.Annotations\enums\PdfTextAnnotationIcon.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfAnnotations.cs" Link="PdfSharp\Pdf.Annotations\PdfAnnotations.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfGenericAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfGenericAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfLinkAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfLinkAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfRubberStampAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfRubberStampAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfTextAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfTextAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Annotations\PdfWidgetAnnotation.cs" Link="PdfSharp\Pdf.Annotations\PdfWidgetAnnotation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content.Objects\CObjects.cs" Link="PdfSharp\Pdf.Content.Objects\CObjects.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content.Objects\enum\OpCodeFlags.cs" Link="PdfSharp\Pdf.Content.Objects\enum\OpCodeFlags.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content.Objects\enum\OpCodeName.cs" Link="PdfSharp\Pdf.Content.Objects\enum\OpCodeName.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content.Objects\Operators.cs" Link="PdfSharp\Pdf.Content.Objects\Operators.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\Chars.cs" Link="PdfSharp\Pdf.Content\Chars.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\CLexer.cs" Link="PdfSharp\Pdf.Content\CLexer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\ContentReader.cs" Link="PdfSharp\Pdf.Content\ContentReader.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\ContentReaderException.cs" Link="PdfSharp\Pdf.Content\ContentReaderException.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\ContentWriter.cs" Link="PdfSharp\Pdf.Content\ContentWriter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\CParser.cs" Link="PdfSharp\Pdf.Content\CParser.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Content\enums\Symbol.cs" Link="PdfSharp\Pdf.Content\enums\Symbol.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\Ascii85Decode.cs" Link="PdfSharp\Pdf.Filters\Ascii85Decode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\AsciiHexDecode.cs" Link="PdfSharp\Pdf.Filters\AsciiHexDecode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\Filter.cs" Link="PdfSharp\Pdf.Filters\Filter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\Filtering.cs" Link="PdfSharp\Pdf.Filters\Filtering.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\FlateDecode.cs" Link="PdfSharp\Pdf.Filters\FlateDecode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Filters\LzwDecode.cs" Link="PdfSharp\Pdf.Filters\LzwDecode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\AnsiEncoding.cs" Link="PdfSharp\Pdf.Internal\AnsiEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\ColorSpaceHelper.cs" Link="PdfSharp\Pdf.Internal\ColorSpaceHelper.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\DocEncoding.cs" Link="PdfSharp\Pdf.Internal\DocEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\GlobalObjectTable.cs" Link="PdfSharp\Pdf.Internal\GlobalObjectTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\PdfDiagnostics.cs" Link="PdfSharp\Pdf.Internal\PdfDiagnostics.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\PdfEncoders.cs" Link="PdfSharp\Pdf.Internal\PdfEncoders.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\RawEncoding.cs" Link="PdfSharp\Pdf.Internal\RawEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\RawUnicodeEncoding.cs" Link="PdfSharp\Pdf.Internal\RawUnicodeEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Internal\ThreadLocalStorage.cs" Link="PdfSharp\Pdf.Internal\ThreadLocalStorage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\Chars.cs" Link="PdfSharp\Pdf.IO\Chars.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\enums\PasswordValidity.cs" Link="PdfSharp\Pdf.IO\enums\PasswordValidity.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\enums\PdfDocumentOpenMode.cs" Link="PdfSharp\Pdf.IO\enums\PdfDocumentOpenMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\enums\PdfWriterLayout.cs" Link="PdfSharp\Pdf.IO\enums\PdfWriterLayout.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\enums\PdfWriterOptions.cs" Link="PdfSharp\Pdf.IO\enums\PdfWriterOptions.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\enums\Symbol.cs" Link="PdfSharp\Pdf.IO\enums\Symbol.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\Lexer.cs" Link="PdfSharp\Pdf.IO\Lexer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\Parser.cs" Link="PdfSharp\Pdf.IO\Parser.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\PdfReader.cs" Link="PdfSharp\Pdf.IO\PdfReader.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\PdfReaderException.cs" Link="PdfSharp\Pdf.IO\PdfReaderException.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\PdfWriter.cs" Link="PdfSharp\Pdf.IO\PdfWriter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.IO\ShiftStack.cs" Link="PdfSharp\Pdf.IO\ShiftStack.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Printing\PdfFilePrinter.cs" Link="PdfSharp\Pdf.Printing\PdfFilePrinter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\enums\PdfDocumentSecurity.cs" Link="PdfSharp\Pdf.Security\enums\PdfDocumentSecurity.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\enums\PdfUserAccessPermission.cs" Link="PdfSharp\Pdf.Security\enums\PdfUserAccessPermission.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\MD5Managed.cs" Link="PdfSharp\Pdf.Security\MD5Managed.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\PdfSecurityHandler.cs" Link="PdfSharp\Pdf.Security\PdfSecurityHandler.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\PdfSecuritySettings.cs" Link="PdfSharp\Pdf.Security\PdfSecuritySettings.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf.Security\PdfStandardSecurityHandler.cs" Link="PdfSharp\Pdf.Security\PdfStandardSecurityHandler.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\EntryInfoAttribute.cs" Link="PdfSharp\Pdf\EntryInfoAttribute.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\DocumentState.cs" Link="PdfSharp\Pdf\enums\DocumentState.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfColorMode.cs" Link="PdfSharp\Pdf\enums\PdfColorMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfCustomValueCompression.cs" Link="PdfSharp\Pdf\enums\PdfCustomValueCompression.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfFlateEncodeMode.cs" Link="PdfSharp\Pdf\enums\PdfFlateEncodeMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfFontEmbedding.cs" Link="PdfSharp\Pdf\enums\PdfFontEmbedding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfFontEncoding.cs" Link="PdfSharp\Pdf\enums\PdfFontEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfOutlineStyle.cs" Link="PdfSharp\Pdf\enums\PdfOutlineStyle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfPageDestinationType.cs" Link="PdfSharp\Pdf\enums\PdfPageDestinationType.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfPageLayout.cs" Link="PdfSharp\Pdf\enums\PdfPageLayout.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfPageMode.cs" Link="PdfSharp\Pdf\enums\PdfPageMode.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfReadingDirection.cs" Link="PdfSharp\Pdf\enums\PdfReadingDirection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfTextStringEncoding.cs" Link="PdfSharp\Pdf\enums\PdfTextStringEncoding.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\enums\PdfUseFlateDecoderForJpegImages.cs" Link="PdfSharp\Pdf\enums\PdfUseFlateDecoderForJpegImages.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\KeysBase.cs" Link="PdfSharp\Pdf\KeysBase.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\KeysMeta.cs" Link="PdfSharp\Pdf\KeysMeta.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfArray.cs" Link="PdfSharp\Pdf\PdfArray.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfBoolean.cs" Link="PdfSharp\Pdf\PdfBoolean.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfBooleanObject.cs" Link="PdfSharp\Pdf\PdfBooleanObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfCustomValue.cs" Link="PdfSharp\Pdf\PdfCustomValue.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfCustomValues.cs" Link="PdfSharp\Pdf\PdfCustomValues.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDate.cs" Link="PdfSharp\Pdf\PdfDate.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDictionary.cs" Link="PdfSharp\Pdf\PdfDictionary.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDocument.cs" Link="PdfSharp\Pdf\PdfDocument.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDocumentInformation.cs" Link="PdfSharp\Pdf\PdfDocumentInformation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDocumentOptions.cs" Link="PdfSharp\Pdf\PdfDocumentOptions.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfDocumentSettings.cs" Link="PdfSharp\Pdf\PdfDocumentSettings.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfInteger.cs" Link="PdfSharp\Pdf\PdfInteger.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfIntegerObject.cs" Link="PdfSharp\Pdf\PdfIntegerObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfItem.cs" Link="PdfSharp\Pdf\PdfItem.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfLiteral.cs" Link="PdfSharp\Pdf\PdfLiteral.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfName.cs" Link="PdfSharp\Pdf\PdfName.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfNameObject.cs" Link="PdfSharp\Pdf\PdfNameObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfNull.cs" Link="PdfSharp\Pdf\PdfNull.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfNullObject.cs" Link="PdfSharp\Pdf\PdfNullObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfNumber.cs" Link="PdfSharp\Pdf\PdfNumber.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfNumberObject.cs" Link="PdfSharp\Pdf\PdfNumberObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfObject.cs" Link="PdfSharp\Pdf\PdfObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfObjectID.cs" Link="PdfSharp\Pdf\PdfObjectID.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfOutline.cs" Link="PdfSharp\Pdf\PdfOutline.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfOutlineCollection.cs" Link="PdfSharp\Pdf\PdfOutlineCollection.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfPage.cs" Link="PdfSharp\Pdf\PdfPage.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfPages.cs" Link="PdfSharp\Pdf\PdfPages.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfReal.cs" Link="PdfSharp\Pdf\PdfReal.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfRealObject.cs" Link="PdfSharp\Pdf\PdfRealObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfRectangle.cs" Link="PdfSharp\Pdf\PdfRectangle.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfReferenceTable.cs" Link="PdfSharp\Pdf\PdfReferenceTable.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfString.cs" Link="PdfSharp\Pdf\PdfString.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfStringObject.cs" Link="PdfSharp\Pdf\PdfStringObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfUInteger.cs" Link="PdfSharp\Pdf\PdfUInteger.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfUIntegerObject.cs" Link="PdfSharp\Pdf\PdfUIntegerObject.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\PdfViewerPreferences.cs" Link="PdfSharp\Pdf\PdfViewerPreferences.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\Pdf\TrimMargins.cs" Link="PdfSharp\Pdf\TrimMargins.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\enums\PageOrientation.cs" Link="PdfSharp\root\enums\PageOrientation.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\enums\PageSize.cs" Link="PdfSharp\root\enums\PageSize.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\enums\PSMsgID.cs" Link="PdfSharp\root\enums\PSMsgID.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\PageSizeConverter.cs" Link="PdfSharp\root\PageSizeConverter.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\PdfSharpException.cs" Link="PdfSharp\root\PdfSharpException.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\ProductVersionInfo.cs" Link="PdfSharp\root\ProductVersionInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\root\PSSR.cs" Link="PdfSharp\root\PSSR.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\pdfsharp\root\VersionInfo.cs" Link="PdfSharp.Charting\root\VersionInfo.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Checksums\Adler32.cs" Link="PdfSharp\SharpZipLib\Checksums\Adler32.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Checksums\CRC32.cs" Link="PdfSharp\SharpZipLib\Checksums\CRC32.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Checksums\IChecksum.cs" Link="PdfSharp\SharpZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\SharpZipBaseException.cs" Link="PdfSharp\SharpZipLib\SharpZipBaseException.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Deflater.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\DeflaterConstants.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\DeflaterEngine.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\DeflaterPending.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Inflater.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\PendingBuffer.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" Link="PdfSharp\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\ZipConstants.cs" Link="PdfSharp\SharpZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\Zip\ZipException.cs" Link="PdfSharp\SharpZipLib\Zip\ZipException.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\BookmarkField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\BookmarkField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\DateField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\DateField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\enums\InfoFieldType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\enums\InfoFieldType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\InfoField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\InfoField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumericFieldBase.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumericFieldBase.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumPagesField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\NumPagesField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageRefField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\PageRefField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionPagesField.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\SectionPagesField.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DomValueDescriptorCollection.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DomValueDescriptorCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DVAttribute.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\DVAttribute.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\GV.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\GV.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\VDFlags.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\VDFlags.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\INullableValue.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\INullableValue.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\Meta.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\Meta.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NBool.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NBool.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NDouble.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NDouble.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NEnum.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NEnum.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NInt.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NInt.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NString.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\NString.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\ValueDescriptor.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\ValueDescriptor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParser.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParser.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParserException.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlParserException.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReader.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReader.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderError.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderError.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderErrors.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlReaderErrors.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlScanner.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlScanner.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlWriter.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\DdlWriter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\DdlErrorLevel.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\DdlErrorLevel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\Symbol.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\Symbol.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\TokenType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\TokenType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\Symbols.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\Symbols.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Axis.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Axis.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\AxisTitle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\AxisTitle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Chart.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Chart.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\ChartObject.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\ChartObject.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\DataLabel.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\DataLabel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\BlankType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\BlankType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\ChartType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\ChartType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\DataLabelPosition.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\DataLabelPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\DataLabelType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\DataLabelType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\HorizontalAlignment.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\HorizontalAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\MarkerStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\MarkerStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\enums\TickMarkType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\TickMarkType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Gridlines.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Gridlines.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Legend.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Legend.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\PlotArea.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\PlotArea.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Point.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Point.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\Series.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\Series.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\SeriesCollection.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\SeriesCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\SeriesElements.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\SeriesElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\TextArea.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\TextArea.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\TickLabels.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\TickLabels.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XSeries.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\XSeries.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XSeriesElements.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\XSeriesElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XValue.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\XValue.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes.Charts\XValues.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\XValues.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Barcode.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Barcode.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\BarcodeType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\BarcodeType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\DashStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\DashStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\LineStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\LineStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeHorizontal.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeHorizontal.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeVertical.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\RelativeVertical.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\ShapePosition.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\ShapePosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\TextOrientation.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\TextOrientation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\WrapStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\WrapStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\FillFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\FillFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Image.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Image.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LeftPosition.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LeftPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LineFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\LineFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\PictureFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\PictureFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Shape.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\Shape.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TextFrame.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TextFrame.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TopPosition.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\TopPosition.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\WrapFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\WrapFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cell.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cell.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cells.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Cells.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Column.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Column.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Columns.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Columns.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\Edge.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\Edge.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RoundedCorner.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RoundedCorner.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowAlignment.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowHeightRule.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\RowHeightRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\VerticalAlignment.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\VerticalAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Row.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Row.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Rows.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Rows.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Table.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\Table.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\TableFormatter.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\TableFormatter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\CellComparer.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\CellComparer.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\DocumentObjectVisitor.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\DocumentObjectVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\IDomVisitable.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\IDomVisitable.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\MergedCellList.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\MergedCellList.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\PdfFlattenVisitor.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\PdfFlattenVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\RtfFlattenVisitor.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\RtfFlattenVisitor.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\VisitorBase.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\VisitorBase.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Border.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Border.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Borders.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Borders.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Character.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Character.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Chars.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Chars.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Color.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Color.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Colors.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Colors.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlEncoder.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlEncoder.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlVisibleAttribute.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DdlVisibleAttribute.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Document.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Document.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentElements.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentInfo.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObject.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObject.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObjectCollection.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentObjectCollection.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentRelations.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DocumentRelations.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\DomSR.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\DomSR.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BorderType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BreakType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\BreakType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ColorName.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ColorName.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\DomMsgID.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\DomMsgID.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FontProperties.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FontProperties.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteLocation.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteLocation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberingRule.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberingRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberStyle.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FootnoteNumberStyle.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HeaderFooterIndex.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HeaderFooterIndex.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HyperlinkType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\HyperlinkType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\LineSpacingRule.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\LineSpacingRule.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ListType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ListType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Orientation.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Orientation.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\OutlineLevel.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\OutlineLevel.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\PageFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\PageFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ParagraphAlignment.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\ParagraphAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\StyleType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\StyleType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\SymbolName.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\SymbolName.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabAlignment.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabAlignment.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabLeader.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TabLeader.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TextFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TextFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Underline.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Underline.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\UnitType.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\UnitType.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Font.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Font.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Footnote.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Footnote.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\FormattedText.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\FormattedText.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\HeaderFooter.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\HeaderFooter.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\HeadersFooters.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\HeadersFooters.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Hyperlink.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Hyperlink.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ImageHelper.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\ImageHelper.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ListInfo.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\ListInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\PageBreak.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\PageBreak.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\PageSetup.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\PageSetup.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Paragraph.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Paragraph.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphElements.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphElements.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphFormat.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\ParagraphFormat.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Section.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Section.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Sections.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Sections.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Serializer.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Serializer.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Shading.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Shading.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Style.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Style.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\StyleNames.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\StyleNames.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Styles.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Styles.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStop.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStop.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStops.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\TabStops.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Text.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Text.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\TextMeasurement_delete.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\TextMeasurement_delete.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\Unit.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\Unit.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\VersionInfo.cs" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel\VersionInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\AxisMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\AxisMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\ChartMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\ChartMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\DataLabelMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\DataLabelMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\FillFormatMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\FillFormatMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\FontMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\FontMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\LegendMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\LegendMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\LineFormatMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\LineFormatMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\PlotAreaMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\PlotAreaMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\SeriesCollectionMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\SeriesCollectionMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.ChartMapper\XValuesMapper.cs" Link="MigraDoc.Rendering\Rendering.ChartMapper\XValuesMapper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering.Resources\Messages2.cs" Link="MigraDoc.Rendering\Rendering.Resources\Messages2.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\Area.cs" Link="MigraDoc.Rendering\Rendering\Area.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\BordersRenderer.cs" Link="MigraDoc.Rendering\Rendering\BordersRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ChartFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\ChartFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ChartRenderer.cs" Link="MigraDoc.Rendering\Rendering\ChartRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ChartRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\ChartRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ColorHelper.cs" Link="MigraDoc.Rendering\Rendering\ColorHelper.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\DocumentRenderer.cs" Link="MigraDoc.Rendering\Rendering\DocumentRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\ElementAlignment.cs" Link="MigraDoc.Rendering\Rendering\enums\ElementAlignment.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\Floating.cs" Link="MigraDoc.Rendering\Rendering\enums\Floating.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\HorizontalReference.cs" Link="MigraDoc.Rendering\Rendering\enums\HorizontalReference.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\ImageFailure.cs" Link="MigraDoc.Rendering\Rendering\enums\ImageFailure.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\PageRenderOptions.cs" Link="MigraDoc.Rendering\Rendering\enums\PageRenderOptions.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\enums\VerticalReference.cs" Link="MigraDoc.Rendering\Rendering\enums\VerticalReference.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FieldInfos.cs" Link="MigraDoc.Rendering\Rendering\FieldInfos.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FillFormatRenderer.cs" Link="MigraDoc.Rendering\Rendering\FillFormatRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FontHandler.cs" Link="MigraDoc.Rendering\Rendering\FontHandler.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormatInfo.cs" Link="MigraDoc.Rendering\Rendering\FormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormattedCell.cs" Link="MigraDoc.Rendering\Rendering\FormattedCell.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormattedDocument.cs" Link="MigraDoc.Rendering\Rendering\FormattedDocument.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormattedHeaderFooter.cs" Link="MigraDoc.Rendering\Rendering\FormattedHeaderFooter.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormattedTextArea.cs" Link="MigraDoc.Rendering\Rendering\FormattedTextArea.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\FormattedTextFrame.cs" Link="MigraDoc.Rendering\Rendering\FormattedTextFrame.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\IAreaProvider.cs" Link="MigraDoc.Rendering\Rendering\IAreaProvider.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ImageFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\ImageFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ImageRenderer.cs" Link="MigraDoc.Rendering\Rendering\ImageRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ImageRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\ImageRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\LayoutInfo.cs" Link="MigraDoc.Rendering\Rendering\LayoutInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\LineFormatRenderer.cs" Link="MigraDoc.Rendering\Rendering\LineFormatRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\NumberFormatter.cs" Link="MigraDoc.Rendering\Rendering\NumberFormatter.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PageBreakFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\PageBreakFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PageBreakRenderer.cs" Link="MigraDoc.Rendering\Rendering\PageBreakRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PageBreakRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\PageBreakRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PageInfo.cs" Link="MigraDoc.Rendering\Rendering\PageInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ParagraphFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\ParagraphFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ParagraphIterator.cs" Link="MigraDoc.Rendering\Rendering\ParagraphIterator.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ParagraphRenderer.cs" Link="MigraDoc.Rendering\Rendering\ParagraphRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ParagraphRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\ParagraphRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PdfDocumentRenderer.cs" Link="MigraDoc.Rendering\Rendering\PdfDocumentRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\PdfPrinter.cs" Link="MigraDoc.Rendering\Rendering\PdfPrinter.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\Renderer.cs" Link="MigraDoc.Rendering\Rendering\Renderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\RenderInfo.cs" Link="MigraDoc.Rendering\Rendering\RenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ShadingRenderer.cs" Link="MigraDoc.Rendering\Rendering\ShadingRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ShapeFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\ShapeFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ShapeRenderer.cs" Link="MigraDoc.Rendering\Rendering\ShapeRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\ShapeRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\ShapeRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TableFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\TableFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TableRenderer.cs" Link="MigraDoc.Rendering\Rendering\TableRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TableRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\TableRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TextFrameFormatInfo.cs" Link="MigraDoc.Rendering\Rendering\TextFrameFormatInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TextFrameRenderer.cs" Link="MigraDoc.Rendering\Rendering\TextFrameRenderer.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TextFrameRenderInfo.cs" Link="MigraDoc.Rendering\Rendering\TextFrameRenderInfo.cs" />
+    <Compile Include="..\MigraDoc.Rendering\Rendering\TopDownFormatter.cs" Link="MigraDoc.Rendering\Rendering\TopDownFormatter.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering.resources\Messages2.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering.resources\Messages2.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\BookmarkFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\BookmarkFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\BorderRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\BorderRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\BorderRendererBase.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\BorderRendererBase.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\BordersRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\BordersRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\CellFormatRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\CellFormatRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\CellRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\CellRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\CharacterRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\CharacterRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ChartRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ChartRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\DateFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\DateFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\enums\RtfUnit.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\enums\RtfUnit.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\FieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\FieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\FontRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\FontRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\FootnoteRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\FootnoteRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\FormattedTextRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\FormattedTextRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\HeaderFooterRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\HeaderFooterRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\HeadersFootersRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\HeadersFootersRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\HyperlinkRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\HyperlinkRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ImageRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ImageRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\InfoFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\InfoFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ListInfoOverrideRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ListInfoOverrideRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ListInfoRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ListInfoRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\NumericFieldRendererBase.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\NumericFieldRendererBase.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\NumPagesFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\NumPagesFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\PageBreakRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\PageBreakRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\PageFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\PageFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\PageRefFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\PageRefFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\PageSetupRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\PageSetupRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ParagraphFormatRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ParagraphFormatRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ParagraphRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ParagraphRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RendererBase.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RendererBase.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RendererFactory.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RendererFactory.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RowRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RowRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RowsRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RowsRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RtfDocumentRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RtfDocumentRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\RtfWriter.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\RtfWriter.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\SectionFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\SectionFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\SectionPagesFieldRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\SectionPagesFieldRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\SectionRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\SectionRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ShadingRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ShadingRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\ShapeRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\ShapeRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\StyleAndFormatRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\StyleAndFormatRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\StyleRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\StyleRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\TableRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\TableRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\TabStopRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\TabStopRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\TabStopsRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\TabStopsRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\TextFrameRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\TextFrameRenderer.cs" />
+    <Compile Include="..\MigraDoc.RtfRendering\RtfRendering\TextRenderer.cs" Link="MigraDoc.RtfRendering\MigraDoc.RtfRendering\TextRenderer.cs" />
+    <None Include="..\MigraDoc.DocumentObjectModel\Properties\AssemblyInfo.cs" Link="AssemblyInfo.cs" />
+    <Compile Include="..\MigraDoc.DocumentObjectModel\Properties\ProductVersionInfo.cs" Link="ProductVersionInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\PDFsharp\src\PdfSharp\SharpZipLib\ReadMe.txt" Link="PdfSharp\SharpZipLib\ReadMe.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Resources\Messages.de.restext" Link="PdfSharp.Charting\Resources\Messages.de.restext" />
+    <EmbeddedResource Include="..\..\..\PDFsharp\src\PdfSharp.Charting\Resources\Messages.restext" Link="PdfSharp.Charting\Resources\Messages.restext" />
+    <EmbeddedResource Include="..\..\..\PDFsharp\src\PdfSharp\Resources\Messages.de.restext" Link="PdfSharp\Resources\Messages.de.restext" />
+    <EmbeddedResource Include="..\..\..\PDFsharp\src\PdfSharp\Resources\Messages.restext" Link="PdfSharp\Resources\Messages.restext" />
+    <EmbeddedResource Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.de.restext" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.de.restext" />
+    <EmbeddedResource Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.restext" Link="MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\Messages.restext" />
+    <EmbeddedResource Include="..\MigraDoc.Rendering\Rendering.Resources\Messages.de.restext" Link="MigraDoc.Rendering\Rendering.Resources\Messages.de.restext" />
+    <EmbeddedResource Include="..\MigraDoc.Rendering\Rendering.Resources\Messages.restext" Link="MigraDoc.Rendering\Rendering.Resources\Messages.restext" />
+    <EmbeddedResource Include="..\MigraDoc.Rendering\Rendering.Resources\Messages2.de.resx" Link="MigraDoc.Rendering\Rendering.Resources\Messages2.de.resx">
+      <DependentUpon>Messages2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\MigraDoc.Rendering\Rendering.Resources\Messages2.resx" Link="MigraDoc.Rendering\Rendering.Resources\Messages2.resx">
+      <DependentUpon>Messages2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\MigraDoc.RtfRendering\RtfRendering.Resources\Messages.de.restext" Link="MigraDoc.RtfRendering\RtfRendering.Resources\Messages.de.restext" />
+    <EmbeddedResource Include="..\MigraDoc.RtfRendering\RtfRendering.Resources\Messages.restext" Link="MigraDoc.RtfRendering\RtfRendering.Resources\Messages.restext" />
+    <EmbeddedResource Include="..\MigraDoc.RtfRendering\RtfRendering.Resources\PDF.png" Link="MigraDoc.RtfRendering\RtfRendering.Resources\PDF.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Fields\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Internals\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.IO\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Resources\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\DocumentObjectModel.Shapes.Charts\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Shapes\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Tables\enums\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel.Visitors\" />
+    <Folder Include="MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\" />
+    <Folder Include="MigraDoc.Rendering\Rendering.ChartMapper\" />
+    <Folder Include="MigraDoc.Rendering\Rendering.Printing\" />
+    <Folder Include="MigraDoc.Rendering\Rendering.Resources\" />
+    <Folder Include="MigraDoc.Rendering\Rendering\enums\" />
+    <Folder Include="MigraDoc.RtfRendering\MigraDoc.RtfRendering.resources\" />
+    <Folder Include="MigraDoc.RtfRendering\MigraDoc.RtfRendering\enums\" />
+    <Folder Include="MigraDoc.RtfRendering\RtfRendering.Resources\" />
+    <Folder Include="PdfSharp.Charting\Charting.Renderers\" />
+    <Folder Include="PdfSharp.Charting\Charting\enums\" />
+    <Folder Include="PdfSharp.Charting\Resources\" />
+    <Folder Include="PdfSharp.Charting\root\" />
+    <Folder Include="PdfSharp\!internal\" />
+    <Folder Include="PdfSharp\!JetBrains\" />
+    <Folder Include="PdfSharp\Drawing.BarCodes\enums\" />
+    <Folder Include="PdfSharp\Drawing.Internal\" />
+    <Folder Include="PdfSharp\Drawing.Layout\enums\" />
+    <Folder Include="PdfSharp\Drawing.Pdf\enums\" />
+    <Folder Include="PdfSharp\Drawing\enums\" />
+    <Folder Include="PdfSharp\Fonts.OpenType\enums\" />
+    <Folder Include="PdfSharp\Fonts\" />
+    <Folder Include="PdfSharp\Internal\" />
+    <Folder Include="PdfSharp\Pdf.AcroForms\enums\" />
+    <Folder Include="PdfSharp\Pdf.Actions\enums\" />
+    <Folder Include="PdfSharp\Pdf.Advanced\" />
+    <Folder Include="PdfSharp\Pdf.Annotations\enums\" />
+    <Folder Include="PdfSharp\Pdf.Content.Objects\enum\" />
+    <Folder Include="PdfSharp\Pdf.Content\enums\" />
+    <Folder Include="PdfSharp\Pdf.Filters\" />
+    <Folder Include="PdfSharp\Pdf.Internal\" />
+    <Folder Include="PdfSharp\Pdf.IO\enums\" />
+    <Folder Include="PdfSharp\Pdf.Printing\" />
+    <Folder Include="PdfSharp\Pdf.Security\enums\" />
+    <Folder Include="PdfSharp\Pdf\enums\" />
+    <Folder Include="PdfSharp\Resources\images\" />
+    <Folder Include="PdfSharp\root\enums\" />
+    <Folder Include="PdfSharp\SharpZipLib\Checksums\" />
+    <Folder Include="PdfSharp\SharpZipLib\SharpZip\" />
+    <Folder Include="PdfSharp\SharpZipLib\Zip\Compression\Streams\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>
